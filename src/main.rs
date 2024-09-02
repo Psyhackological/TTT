@@ -1,6 +1,7 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
-use std::{error::Error, io};
+use std::error::Error;
+use std::fs::File;
 
 /// Enum for Task Type
 #[derive(Debug, PartialEq, Serialize, Deserialize)]
@@ -50,7 +51,8 @@ struct TaskRecord {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let mut wtr = csv::Writer::from_writer(io::stdout());
+    let file = File::create("output.csv")?;
+    let mut wtr = csv::Writer::from_writer(file);
 
     // Example data creation
     let tasks = vec![
