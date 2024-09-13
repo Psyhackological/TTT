@@ -1,97 +1,31 @@
-use chrono::{DateTime, Utc};
-use serde::{Deserialize, Serialize};
-use std::error::Error;
-use std::fs::File;
+mod config;
+mod export_csv;
+mod toc;
 
-/// Enum for Task Type
-#[derive(Debug, PartialEq, Serialize, Deserialize)]
-enum TaskType {
-    Section,
-    Task,
-}
+use anyhow::{Context, Result};
+use config::TaskDefaultConfig;
+use export_csv::{write_to_csv, CsvRecord};
+use std::env;
+use toc::extract_toc_items;
 
-/// Struct to represent each record in the CSV
-#[derive(Debug, Serialize, Deserialize)]
-struct TaskRecord {
-    #[serde(rename = "TYPE")]
-    task_type: TaskType,
+fn main() -> Result<()> {
+    let current_dir = env::current_dir().with_context(|| {
+        "The directory does not exist or there are insufficient permissions to access it."
+    })?;
 
-    #[serde(rename = "CONTENT")]
-    content: String,
+    let config_path_buf = current_dir.join("./config/defaults.toml");
+    let config = TaskDefaultConfig::try_from(config_path_buf.as_path())?;
 
-    #[serde(rename = "DESCRIPTION")]
-    description: Option<String>,
+    let toc_path_buf = current_dir.join("./input/toc.txt");
+    let toc_items = extract_toc_items(toc_path_buf.as_path())?;
 
-    #[serde(rename = "PRIORITY")]
-    priority: Option<u8>,
+    let records: Vec<CsvRecord> = toc_items
+        .into_iter()
+        .map(|toc| CsvRecord::from_config_and_toc(&config, &toc, None, None, None, None))
+        .collect();
 
-    #[serde(rename = "INDENT")]
-    indent: Option<u8>,
+    let to_todoist_path_buf = current_dir.join("./output/to_todoist.csv");
+    write_to_csv(records, to_todoist_path_buf)?;
 
-    #[serde(rename = "AUTHOR")]
-    author: String,
-
-    #[serde(rename = "RESPONSIBLE")]
-    responsible: Option<String>,
-
-    #[serde(rename = "DATE")]
-    date: Option<DateTime<Utc>>,
-
-    #[serde(rename = "DATE_LANG")]
-    date_lang: Option<String>,
-
-    #[serde(rename = "TIMEZONE")]
-    timezone: Option<String>,
-
-    #[serde(rename = "DURATION")]
-    duration: Option<u64>,
-
-    #[serde(rename = "DURATION_UNIT")]
-    duration_unit: Option<String>,
-}
-
-fn main() -> Result<(), Box<dyn Error>> {
-    let file = File::create("output.csv")?;
-    let mut wtr = csv::Writer::from_writer(file);
-
-    // Example data creation
-    let tasks = vec![
-        TaskRecord {
-            task_type: TaskType::Section,
-            content: String::from("Part 1 Introducting Rust"),
-            description: None,
-            priority: None,
-            indent: None,
-            author: String::new(),
-            responsible: None,
-            date: None,
-            date_lang: None,
-            timezone: None,
-            duration: None,
-            duration_unit: None,
-        },
-        TaskRecord {
-            task_type: TaskType::Task,
-            content: String::from("3.1 Using plain functions to experiment with an API"),
-            description: None,
-            priority: Some(4),
-            indent: Some(1),
-            author: String::from("Konrad (27918041)"),
-            responsible: None,
-            date: None,
-            date_lang: None,
-            timezone: Some(String::from("Europe/Warsaw")),
-            duration: None,
-            duration_unit: None,
-        },
-        // Add more tasks here as needed
-    ];
-
-    // Serialize tasks to CSV
-    for task in tasks {
-        wtr.serialize(task)?;
-    }
-
-    wtr.flush()?;
     Ok(())
 }
