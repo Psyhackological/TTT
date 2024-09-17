@@ -1,0 +1,317 @@
+TYPE,CONTENT,DESCRIPTION,PRIORITY,INDENT,AUTHOR,RESPONSIBLE,DATE,DATE_LANG,TIMEZONE,DURATION,DURATION_UNIT
+task,Preface to the Third Edition,,2,1,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conventions Used in This Book,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Using Code Examples,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,O’Reilly Online Learning,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,How to Contact Us,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Acknowledgments,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,From Lorin,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,From René,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,From Bas,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,1. Introduction,,,,,,,,,,
+task,A Note About Versions,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Ansible: What Is It Good For?,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,How Ansible Works,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,What’s So Great About Ansible?,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Simple,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Powerful,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Secure,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Is Ansible Too Simple?,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,What Do I Need to Know?,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,What Isn’t Covered,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Moving Forward,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,2. Installation and Setup,,,,,,,,,,
+task,Installing Ansible,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Loose Dependencies,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running Ansible in Containers,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Ansible Development,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Setting Up a Server for Testing,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Using Vagrant to Set Up a Test Server,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Telling Ansible About Your Servers,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Simplifying with the ansible.cfg File,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Kill Your Darlings,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Convenient Vagrant Configuration Options,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Port Forwarding and Private IP Addresses,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Enabling Agent Forwarding,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,The Docker Provisioner,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,The Ansible Local Provisioner,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,When the Provisioner Runs,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Vagrant Plug-ins,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Hostmanager,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,VBGuest,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,VirtualBox Customization,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Vagrantfile Is Ruby,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Production Setup,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,3. Playbooks: A Beginning,,,,,,,,,,
+task,Preliminaries,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,A Very Simple Playbook,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Specifying an NGINX Config File,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Creating a Web Page,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Creating a Group,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running the Playbook,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Playbooks Are YAML,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Start of Document,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,End of File,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Comments,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Indentation and Whitespace,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Strings,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Booleans,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Lists,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Dictionaries,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Multiline Strings,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Pure YAML Instead of String Arguments,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Anatomy of a Playbook,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Plays,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Tasks,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Modules,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Viewing Ansible Module Documentation,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Putting It All Together,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Did Anything Change? Tracking Host State,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Getting Fancier: TLS Support,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Generating a TLS Certificate,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Variables,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Quoting in Ansible Strings,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Generating the NGINX Configuration Template,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Loop,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Handlers,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,A Few Things to Keep in Mind About Handlers,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Testing,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Validation,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,The Playbook,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running the Playbook,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,4. Inventory: Describing Your Servers,,,,,,,,,,
+task,Inventory/Hosts Files,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Preliminaries: Multiple Vagrant Machines,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Behavioral Inventory Parameters,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Changing Behavioral Parameter Defaults,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Groups and Groups and Groups,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Example: Deploying a Django App,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Aliases and Ports,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Groups of Groups,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Numbered Hosts (Pets Versus Cattle),,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Hosts and Group Variables: Inside the Inventory,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Host and Group Variables: In Their Own Files,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Dynamic Inventory,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Inventory Plug-ins,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Amazon EC2,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Azure Resource Manager,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,The Interface for a Dynamic Inventory Script,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Writing a Dynamic Inventory Script,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Breaking the Inventory into Multiple Files,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Adding Entries at Runtime with add_host and group_by,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,add_host,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,group_by,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,5. Variables and Facts,,,,,,,,,,
+task,Defining Variables in Playbooks,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Defining Variables in Separate Files,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Directory Layout,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Viewing the Values of Variables,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Variable Interpolation,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Registering Variables,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Facts,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Viewing All Facts Associated with a Server,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Viewing a Subset of Facts,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Any Module Can Return Facts or Info,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Local Facts,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Using set_fact to Define a New Variable,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Built-In Variables,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,hostvars,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,inventory_hostname,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,groups,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Extra Variables on the Command Line,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Precedence,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,6. Introducing Mezzanine: Our Test Application,,,,,,,,,,
+task,Why Is Deploying to Production Complicated?,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Postgres: The Database,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Gunicorn: The Application Server,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,NGINX: The Web Server,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Supervisor: The Process Manager,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,7. Deploying Mezzanine with Ansible,,,,,,,,,,
+task,Listing Tasks in a Playbook,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Organization of Deployed Files,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Variables and Secret Variables,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Installing Multiple Packages,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Adding the Become Clause to a Task,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Updating the apt Cache,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Checking Out the Project Using Git,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Installing Mezzanine and Other Packages into a Virtual Environment,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Complex Arguments in Tasks: A Brief Digression,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Configuring the Database,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Generating the local_settings.py File from a Template,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running django-manage Commands,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running Custom Python Scripts in the Context of the Application,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Setting Service Configuration Files,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Enabling the NGINX Configuration,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Installing TLS Certificates,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Installing Twitter Cron Job,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,The Full Playbook,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running the Playbook Against a Vagrant Machine,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Troubleshooting,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Cannot Check Out Git Repository,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Cannot Reach 192.168.33.10.nip.io,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Bad Request (400),,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,8. Debugging Ansible Playbooks,,,,,,,,,,
+task,Humane Error Messages,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Debugging SSH Issues,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Common SSH Challenges,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,PasswordAuthentication no,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,SSH as a Different User,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Host Key Verification Failed,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Private Networks,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,The debug Module,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Playbook Debugger,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,The assert Module,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Checking Your Playbook Before Execution,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Syntax Check,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,List Hosts,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,List Tasks,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Check Mode,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Diff (Show File Changes),,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Tags,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Limits,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,9. Roles: Scaling Up Your Playbooks,,,,,,,,,,
+task,Basic Structure of a Role,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Example: Deploying Mezzanine with Roles,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Using Roles in Your Playbooks,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Pre-Tasks and Post-Tasks,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,A database Role for Deploying the Database,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,A mezzanine Role for Deploying Mezzanine,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Creating Role Files and Directories with ansible-galaxy,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Dependent Roles,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Ansible Galaxy,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Web Interface,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Command-Line Interface,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Role Requirements in Practice,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Contributing Your Own Role,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,10. Complex Playbooks,,,,,,,,,,
+task,Dealing with Badly Behaved Commands,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Filters,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,The default Filter,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Filters for Registered Variables,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Filters That Apply to Filepaths,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Writing Your Own Filter,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Lookups,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,file,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,pipe,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,env,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,password,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,template,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,csvfile,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,dig,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,redis,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Writing Your Own Lookup Plug-in,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,More Complicated Loops,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,With Lookup Plug-in,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,with_lines,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,with_fileglob,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,with_dict,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Looping Constructs as Lookup Plug-ins,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Loop Controls,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Setting the Variable Name,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Labeling the Output,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Imports and Includes,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Dynamic Includes,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Role Includes,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Role Flow Control,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Blocks,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Error Handling with Blocks,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Encrypting Sensitive Data with ansible-vault,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Multiple Vaults with Different Passwords,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,"11. Customizing Hosts, Runs, and Handlers",,,,,,,,,,
+task,Patterns for Specifying Hosts,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Limiting Which Hosts Run,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running a Task on the Control Machine,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Manually Gathering Facts,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Retrieving an IP Address from the Host,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running on One Host at a Time,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running on a Batch of Hosts at a Time,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running Only Once,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Limiting Which Tasks Run,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,step,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,start-at-task,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running Tags,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Skipping Tags,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running Strategies,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Linear,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Free,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Advanced Handlers,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Handlers in Pre- and Post-Tasks,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Flush Handlers,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Meta Commands,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Handlers Notifying Handlers,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Handlers Listen,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,The SSL Case for the listen Feature,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,12. Managing Windows Hosts,,,,,,,,,,
+task,Connection to Windows,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,PowerShell,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Windows Modules,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Our Java Development Machine,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Adding a Local User,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Windows Features,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Installing Software with Chocolatey,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Configuration of Java,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Updating Windows,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,13. Ansible and Containers,,,,,,,,,,
+task,Kubernetes,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Docker Application Life Cycle,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Registries,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Ansible and Docker,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Connecting to the Docker Daemon,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Example Application: Ghost,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Running a Docker Container on Our Local Machine,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Building an Image from a Dockerfile,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Pushing Our Image to the Docker Registry,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Orchestrating Multiple Containers on Our Local Machine,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Querying Local Images,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Deploying the Dockerized Application,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Provisioning MySQL,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Deploying the Ghost Database,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Frontend,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Frontend: Ghost,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Frontend: NGINX,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Cleaning Out Containers,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,14. Quality Assurance with Molecule,,,,,,,,,,
+task,Installation and Setup,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Configuring Molecule Drivers,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Creating an Ansible Role,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Scenarios,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Desired State,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Configuring Scenarios in Molecule,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Managing Virtual Machines,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Managing Containers,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Molecule Commands,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Linting,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,YAMLlint,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,ansible-lint,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,ansible-later,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Verifiers,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Ansible,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Goss,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,TestInfra,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,15. Collections,,,,,,,,,,
+task,Installing Collections,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Listing Collections,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Using Collections in a Playbook,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Developing a Collection,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Conclusion,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+section,16. Creating Images,,,,,,,,,,
+task,Creating Images with Packer,,2,2,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Vagrant VirtualBox VM,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Combining Packer and Vagrant,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Cloud Images,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Google Cloud Platform,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Azure,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
+task,Amazon EC2,,2,3,Konrad (27918041),,,,Europe/Warsaw,30,minute
